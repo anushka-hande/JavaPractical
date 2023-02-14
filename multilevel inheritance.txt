@@ -1,0 +1,55 @@
+note: filename:Result.java
+
+class Student
+{
+    String name="Jack Herry";
+    int rollno=12;
+    void display()
+    {
+        System.out.println("Student name: "+name);
+        System.out.println("Roll number: "+rollno);
+    }
+}
+class Test extends Student
+{
+    int maths=95;
+    int physics=85;
+    int biology=90;
+    int total=maths+physics+biology;
+    void displaymarks()
+    {
+        System.out.println("Maths marks: "+maths);
+        System.out.println("Physics marks: "+physics);
+        System.out.println("Biology marks: "+biology);
+        System.out.println("Total marks: "+total);
+    }
+}
+class Result extends Test
+{
+    public static void main(String args[]){
+        Result r1=new Result();
+        r1.display();
+        r1.displaymarks();
+        double percent;
+        percent=r1.total/300.0d*100d;
+        System.out.println("Percent: "+percent);
+        if(percent>0.0 && percent<=20.0){
+            System.out.println("Grade E");
+        }
+        else if(percent>20.0 && percent<=40.0){
+            System.out.println("Grade D");
+        }
+        else if(percent>40.0 && percent<=60.0){
+            System.out.println("Grade C");
+        }
+        else if(percent>60.0 && percent<=80.0){
+            System.out.println("Grade B");
+        }
+        else if(percent>80.0 && percent<=100.0){
+            System.out.println("Grade A");
+        }
+        else{
+            System.out.println("Error in percentage");
+        }
+    }
+}

@@ -1,0 +1,16 @@
+note: filename:DefaultHandeling.java
+
+class DefaultHandeling{
+    public static void main(String[] args)
+    { 
+        try{
+            int a=10,b=0;
+            System.out.println("A= "+a+"B= "+b);
+            int c=a/b;
+            System.out.println("c= "+c);
+        }
+        catch(Exception e){
+            System.out.println("Error in operation "+e);
+        }
+    }
+}

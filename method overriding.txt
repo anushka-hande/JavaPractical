@@ -1,0 +1,40 @@
+note: filename:Dog.java
+
+import java.util.Scanner;
+class Animal
+{
+    void move(){
+        System.out.println("Animal is moving");
+    }
+    void eat(){
+        System.out.println("Animal eats food");
+    }
+}
+class Dog extends Animal
+{
+    void name()
+    {
+        System.out.println("Animal's name is Dog");
+    }
+    void move(){
+        System. out.println("dogs can run");
+    }
+    void bark(){
+        System. out.println("Dogs bark");
+    }
+    public static void main(String args[]){
+        Dog d1=new Dog();
+        d1.move();
+        d1.eat();
+        d1.bark();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of limbs of the animal");
+        int l=sc.nextInt();
+        if(l==4)
+            System. out.println("Animal is Quadruped aniaml");
+        else if(l==2)
+            System.out.println("Animal is a Bipedal animal");
+        else
+            System. out.println("Other type");
+        }
+}

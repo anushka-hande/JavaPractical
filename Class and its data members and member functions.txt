@@ -1,0 +1,14 @@
+note: filename:Student.java
+
+public class Student{
+	static int id;
+	static String name;
+    static int totalmarks;
+    public void display(int id, String name, int totalmarks){
+        System.out.println("Student ID = "+id+","+"\nStudent Name = "+name+","+"\nTotal Marks = "+totalmarks);
+    }
+    public static void main(String[] args) {
+        Student student =new Student();
+        student.display(id=813,name="Anushka",totalmarks=73);
+    }
+}

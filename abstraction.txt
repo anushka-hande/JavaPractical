@@ -1,0 +1,66 @@
+note: filename:main.java
+
+abstract class Shape
+{
+    double w,h,r;
+    void setdata(double w1,double h1,double r1){
+        w=w1;
+        h=h1;
+        r=r1;
+    }
+    abstract void area();
+    abstract void difference();
+}
+class Circle extends Shape
+{
+    void difference()
+    {
+        System.out.println("Circle has no vertical but square and rectangle has");
+    }
+    void area()
+    {
+        double ar=(3.14*r*r);
+        System.out.println("Area of circle having radius="+r+"is"+ar);
+    }
+}
+class Square extends Shape
+{
+    void difference(){
+        System.out.println("All sides of square are equal on the other hand parallel sides of rectangle are equal.");
+    }
+    void area()
+    {
+        double ar=(w*w);
+        System.out.println("Area of square having width="+w+"is"+ar);
+    } 
+}
+class Rectangle extends Shape 
+{
+    void difference()
+    {
+        System.out.println("In rectangle opposite sides are equal,circle has no sides and in square all sides are equal.");
+        
+    }
+    void area()
+    {
+        double ar=(w*h);
+        System.out.println("Area of rectangle having width ="+w+"and height="+h+"is"+ar);
+    }
+}
+class main
+{
+    public static void main(String args[]){
+        Circle c=new Circle();
+        Square s=new Square();
+        Rectangle r=new Rectangle();
+        c.setdata(5,2,8.5);
+        s.setdata(3.5,2.5,8);
+        r.setdata(6.5,7.5,8);
+        c.difference();
+        c.area();
+        s.difference();
+        s.area();
+        r.difference();
+        r.area();
+    }
+}

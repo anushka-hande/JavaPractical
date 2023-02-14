@@ -1,0 +1,17 @@
+note: filename:.Javacollectionjava
+
+import java.util.*;
+class Javacollection {
+    public static void main(String[]args) { 
+        ArrayList <String> name= new ArrayList<String>(); 
+        name.add("Bob");
+        name.add("John");
+        name.add("James");
+        System.out.println(name);
+        name.add(1,"Harry");
+        System.out.println(name);
+        name.set(0,"Kevin");
+        name.remove(2);
+        System.out.println(name);
+    }
+}

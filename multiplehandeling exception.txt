@@ -1,0 +1,23 @@
+note: filename:MultipleExceptionHandeling.java
+
+class MultipleExceptionHandeling{
+    public static void main(String[]args){
+        try{
+            System.out.println("Begin: tryBlock \n");
+            String name= "abc";
+            int nameLength= name.length();
+            int res= 10/0;
+            System.out.println("End: tryBlock");
+        }
+        catch(ArithmeticException e){
+            System.out.println("Division is not allowed with zero denominator");
+        }
+        catch(NullPointerException e){
+            System.out.println("Name should not be NULL.");
+        }
+        catch(Exception e){
+            System.out.println("General Exception.");
+        }
+    }
+}
+    
